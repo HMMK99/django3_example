@@ -119,3 +119,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# # For SMTP
+# EMAIL_HOST = ### defaault is local host if u want to change it 'stmp.gmail.com'
+# EMAIL_PORT = ### default 25 587 if changed
+# EMAIL_HOST_USER = ### if changes 'your account email'
+# EMAIL_HOST_PASSWORD = ### 'the Email password'
+# EMAIL_USE_TLS = ### Tramsport Layer security
+# EMAIL_USE_SSL = ### Implicit TLS secure connection
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'

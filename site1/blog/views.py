@@ -4,6 +4,7 @@ from django.views.generic import ListView
 from .models import Post
 from .forms import EmailPostForm
 
+
 # Sharing a post with other email
 def post_share(request, post_id):
     post = get_object_or_404(Post, id=post_id, status='published')
